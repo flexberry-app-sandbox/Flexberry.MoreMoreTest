@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISMoreMoreTestМастерДетейл1",
+  "modelName": "i-i-s-more-more-test-мастер-детейл1",
+  "className": "МастерДетейл1",
+  "nameSpace": "IIS.MoreMoreTest",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "а",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "МастерДетейл1E",
+      "modelName": "i-i-s-more-more-test-мастер-детейл1",
+      "attrs": [
+        {
+          "name": "а",
+          "caption": "А",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "МастерДетейл1L",
+      "modelName": "i-i-s-more-more-test-мастер-детейл1",
+      "attrs": [
+        {
+          "name": "а",
+          "caption": "А",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Мастер детейл1",
+  "name": "IISMoreMoreTestМастерДетейл1E",
+  "className": "МастерДетейл1E",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-more-more-test-мастер-детейл1",
+      "modelProjection": "МастерДетейл1E"
+    }
+  ]
+}

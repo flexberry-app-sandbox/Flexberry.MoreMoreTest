@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "МастерАгрегат",
+      "projection": "МастерАгрегаторL",
+      "detailModelName": null
+    },
+    {
+      "master": "мастерДетейл1",
+      "displayAttributeName": "а",
+      "required": true,
+      "relationName": "Детейл1.МастерДетейл1",
+      "projection": "МастерДетейл1L",
+      "detailModelName": "i-i-s-more-more-test-детейл1"
+    }
+  ],
+  "external": false,
+  "caption": "Агрегатор",
+  "name": "IISMoreMoreTestАгрегаторE",
+  "className": "АгрегаторE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-more-more-test-агрегатор",
+      "modelProjection": "АгрегаторE"
+    }
+  ]
+}

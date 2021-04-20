@@ -1,0 +1,48 @@
+﻿{
+  "name": "IISMoreMoreTestДетейл2",
+  "modelName": "i-i-s-more-more-test-детейл2",
+  "className": "Детейл2",
+  "nameSpace": "IIS.MoreMoreTest",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "а",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "детейл1",
+      "relatedTo": "i-i-s-more-more-test-детейл1",
+      "inverse": "детейл2"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "Детейл2E",
+      "modelName": "i-i-s-more-more-test-детейл2",
+      "attrs": [
+        {
+          "name": "а",
+          "caption": "А",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-more-more-test-мастер-детейл1-e",
+  "editForm": "i-i-s-more-more-test-мастер-детейл1-e",
+  "external": false,
+  "caption": "Мастер детейл1",
+  "name": "IISMoreMoreTestМастерДетейл1L",
+  "className": "МастерДетейл1L",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-more-more-test-мастер-детейл1",
+      "modelProjection": "МастерДетейл1L"
+    }
+  ]
+}

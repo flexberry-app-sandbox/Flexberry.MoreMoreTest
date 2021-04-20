@@ -1,0 +1,71 @@
+<h3 class="ui header">{{t "forms.i-i-s-more-more-test-агрегатор-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.а
+      class=(if (v-get validationObject "а" "isInvalid") "error")
+      label=(t "forms.i-i-s-more-more-test-агрегатор-e.а-caption")
+      data-test-i-i-s-more-more-test-агрегатор-e-а=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "а" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-more-more-test-агрегатор-e.мастерАгрегат-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.мастерАгрегат
+      class=(if (v-get validationObject "мастерАгрегат" "isInvalid") "error")
+      displayAttributeName="а"
+      autocomplete=true
+      relationName="мастерАгрегат"
+      projection="МастерАгрегаторL"
+      title=(t "forms.i-i-s-more-more-test-агрегатор-e.мастерАгрегат-caption")
+      readonly=readonly
+      componentName="мастерАгрегатLookup"
+      class=(if (v-get validationObject "мастерАгрегат" "isInvalid") "error")
+      data-test-i-i-s-more-more-test-агрегатор-e-мастерАгрегат=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "мастерАгрегат" "message")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.i-i-s-more-more-test-агрегатор-e.детейл1-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="детейл1GroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.детейл1
+      content=model.детейл1
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationObject "детейл1" "isInvalid") "error")
+      data-test-i-i-s-more-more-test-агрегатор-e-детейл1=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "детейл1" "message")}}
+  </div>
+</form>

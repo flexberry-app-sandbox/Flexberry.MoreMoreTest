@@ -1,0 +1,113 @@
+﻿{
+  "name": "IISMoreMoreTestАгрегатор",
+  "modelName": "i-i-s-more-more-test-агрегатор",
+  "className": "Агрегатор",
+  "nameSpace": "IIS.MoreMoreTest",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "а",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "мастерАгрегат",
+      "relatedTo": "i-i-s-more-more-test-мастер-агрегат",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "детейл1",
+      "relatedTo": "i-i-s-more-more-test-детейл1",
+      "inverse": "агрегатор"
+    }
+  ],
+  "projections": [
+    {
+      "name": "АгрегаторE",
+      "modelName": "i-i-s-more-more-test-агрегатор",
+      "attrs": [
+        {
+          "name": "а",
+          "caption": "А",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "А",
+          "lookupValueField": "а",
+          "relationName": "МастерАгрегат",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 1,
+          "type": "standard",
+          "caption": "",
+          "name": "мастерАгрегат",
+          "relatedTo": "i-i-s-more-more-test-мастер-агрегат",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "Детейл1E",
+          "caption": "Детейл1",
+          "name": "детейл1",
+          "relatedTo": "i-i-s-more-more-test-детейл1",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "АгрегаторL",
+      "modelName": "i-i-s-more-more-test-агрегатор",
+      "attrs": [
+        {
+          "name": "а",
+          "caption": "А",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "МастерАгрегат",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "а",
+              "caption": "МастерА",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "МастерА",
+          "name": "мастерАгрегат",
+          "relatedTo": "i-i-s-more-more-test-мастер-агрегат",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

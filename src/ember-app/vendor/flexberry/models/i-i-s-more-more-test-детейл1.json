@@ -1,0 +1,91 @@
+﻿{
+  "name": "IISMoreMoreTestДетейл1",
+  "modelName": "i-i-s-more-more-test-детейл1",
+  "className": "Детейл1",
+  "nameSpace": "IIS.MoreMoreTest",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "а",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "мастерДетейл1",
+      "relatedTo": "i-i-s-more-more-test-мастер-детейл1",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "агрегатор",
+      "relatedTo": "i-i-s-more-more-test-агрегатор",
+      "inverse": "детейл1"
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "детейл2",
+      "relatedTo": "i-i-s-more-more-test-детейл2",
+      "inverse": "детейл1"
+    }
+  ],
+  "projections": [
+    {
+      "name": "Детейл1E",
+      "modelName": "i-i-s-more-more-test-детейл1",
+      "attrs": [
+        {
+          "name": "а",
+          "caption": "А",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "А",
+          "lookupValueField": "а",
+          "relationName": "МастерДетейл1",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "а",
+              "caption": "А",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Мастер детейл1",
+          "name": "мастерДетейл1",
+          "relatedTo": "i-i-s-more-more-test-мастер-детейл1",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "Детейл2E",
+          "caption": "Детейл2",
+          "name": "детейл2",
+          "relatedTo": "i-i-s-more-more-test-детейл2",
+          "inverse": null
+        }
+      ]
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

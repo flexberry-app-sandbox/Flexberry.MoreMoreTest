@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-more-more-test-мастер-агрегатор-e",
+  "editForm": "i-i-s-more-more-test-мастер-агрегатор-e",
+  "external": false,
+  "caption": "Мастер агрегатор",
+  "name": "IISMoreMoreTestМастерАгрегаторL",
+  "className": "МастерАгрегаторL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-more-more-test-мастер-агрегат",
+      "modelProjection": "МастерАгрегаторL"
+    }
+  ]
+}

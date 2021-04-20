@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "More more test",
+  "applicationTitle": "More more test",
+  "items": [
+    {
+      "link": null,
+      "menuName": "more-more-test",
+      "caption": "MoreMoreTest",
+      "title": "MoreMoreTest",
+      "children": [
+        {
+          "link": "i-i-s-more-more-test-агрегатор-l",
+          "menuName": null,
+          "caption": "Агрегатор",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-more-more-test-мастер-агрегатор-l",
+          "menuName": null,
+          "caption": "Мастер агрегатор",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-more-more-test-мастер-детейл1-l",
+          "menuName": null,
+          "caption": "Мастер детейл1",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
